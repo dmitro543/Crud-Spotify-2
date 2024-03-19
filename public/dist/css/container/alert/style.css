@@ -1,0 +1,45 @@
+.product {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
+  gap: 24px;
+  font-family: sans-serif;
+}
+
+.hero-1 {
+  margin-top: 12px;
+  width: max-content;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cool {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-button {
+  margin-bottom: 8px;
+  background-color: rgb(0, 85, 255);
+  padding: 8px;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  max-width: 200px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.padding {
+  padding: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */

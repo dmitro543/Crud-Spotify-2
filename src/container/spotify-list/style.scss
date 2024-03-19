@@ -1,0 +1,72 @@
+.main {
+    background: #000;
+    height: 800px;
+    color: #fff;
+    padding: 16px;
+}
+
+.section {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.section-image {
+    width: 36px;
+    height: 36px;
+}
+
+.gap {
+    display: flex;
+    gap: 14px;
+}
+
+.cart-section {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.music-image {
+    width: 200px;
+    height: 200px;
+}
+
+.music {
+    display: grid;
+    gap: 12px;
+    font-family: sans-serif;
+}
+
+.music-description {
+    font-size: 16px;
+}
+
+.music-2 {
+    display: grid;
+    gap: 12px;
+    font-family: sans-serif;
+    background: rgba(36, 36, 36, 1);
+    width: 200px;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+}
+
+.music-image-2 {
+    width: 100px;
+    height: 100px;
+}
+
+.param {
+    font-size: 12px;
+    color: rgba(189, 189, 189, 1);
+}

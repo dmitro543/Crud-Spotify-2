@@ -1,0 +1,69 @@
+.color {
+  background: #000;
+  color: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  height: 900px;
+  font-family: sans-serif;
+}
+
+.choose {
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.header {
+  text-align: center;
+  margin-left: 500px;
+  position: relative;
+  top: 50px;
+}
+
+.music-content {
+  text-align: center;
+  font-size: 20px;
+}
+
+.music {
+  display: grid;
+  gap: 40px;
+}
+
+.content {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.form {
+  margin-top: 20px;
+  display: grid;
+}
+
+.form-input {
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+.form-button {
+  color: rgb(18, 18, 18);
+  font-weight: 700;
+  padding: 12px;
+  background: rgb(32, 213, 98);
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 24px;
+  transition: opacity 0.6s;
+}
+
+.form-button:hover {
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=style.css.map */
