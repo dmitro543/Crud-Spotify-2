@@ -24,14 +24,6 @@ const router = express.Router()
    static getlist() {
     return this.#list.reverse()
    }
-
-   static getById() {
-    return (
-      Track.#list.find (
-        (track) => track.Id = id,
-      ) || null
-    )
-   }
  }
 Track.create(
    'Інь Ян',
@@ -130,14 +122,35 @@ Playlist.makeMix(Playlist.create('Test2'))
 Playlist.makeMix(Playlist.create('Test3'))
 
 // ================================================================
-// ↙️ тут вводимо шлях (PATH) до сторінки
+
 router.get('/', function (req, res) {
+  allTracks = Track.getlist()
+  console.log(allTracks)
+
+  const allPlaylists = Playlist.getlist()
+  console.log(allPlaylists)
+
+  res.render('index', {
+    style: 'index',
+
+    data: {
+      list: allPlaylists.map(({ tracks, ...rest }) => ({
+        ...rest,
+        amount: tracks.length,
+      })),
+      image: 'https://picsum.photos/100/100',
+    },
+  })
+})
+
+// ================================================================
+
+router.get('/spotify-choose', function (req, res) {
 
   res.render('spotify-choose', {
-    // вказуємо назву папки контейнера, в якій знаходяться наші стилі
+
     style: 'spotify-choose',
   })
-  // ↑↑ сюди вводимо JSON дані
 })
 
 router.get('/spotify-create', function (req, res) {
@@ -351,11 +364,20 @@ router.post('/spotify-search', function (req, res) {
 })
 
 router.get('/spotify-list', function (req, res) {
+  allTracks = Track.getList()
+  console.log(allTracks)
+
+  const allPlaylists = Playlist.getList()
+  console.log(allPlaylists)
+
   res.render('spotify-list', {
     style: 'spotify-list',
    
      data: {
-       
+      list: allPlaylists.map(({ tracks, ...rest }) => ({
+        ...rest,
+        amount: tracks.length,
+      })),
      }
   })
 })
